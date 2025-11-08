@@ -56,13 +56,15 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <h1
-                  className={`text-2xl font-bold ${
-                  sticky ? "text-green-800" : "text-white"
-                }`}
-              >
-                Flash <span className="text-green-700">Biometrics</span>
-              </h1>
+              <div className="relative w-[250px] h-[120px]">
+                <Image
+                  src="/images/LOGO.png"
+                  alt="Flash Biometrics Logo"
+                  fill
+                  className={`object-contain ${sticky ? "opacity-90" : "opacity-100"} transition-opacity duration-300`}
+                  priority
+                />
+              </div>
 
               </Link>
             </div>
