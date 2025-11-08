@@ -1,4 +1,7 @@
 import Link from "next/link";
+import SearchBar from "../Searchbar/Searchbar";
+import HeroBanner from "../HeroBanner/herobanner";
+import TrendingEvents from "../Trending/trendingevents";
 
 const Hero = () => {
   return (
@@ -7,38 +10,19 @@ const Hero = () => {
         id="home"
         className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
-                data-wow-delay=".2s"
-              >
-                <h1 className="mb-5 text-4xl font-bold leading-tight text-black dark:text-white sm:text-5xl md:text-6xl">
-                  Find Tickets Fast — All in a Flash ⚡
-                </h1>
-                <p className="dark:text-body-color-dark mb-12 text-lg !leading-relaxed text-body-color sm:text-xl">
-                  Search concerts, games, and live events instantly.  
-                  Skip the hassle — discover trending events and book your spot in seconds.
-                </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                <Link
-                  href="/events"
-                  className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                >
-                  🎟️ Browse Events
-                </Link>
-                <Link
-                  href="/trending"
-                  className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                >
-                  🔥 Trending Now
-                </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="container">
+      <SearchBar />
         </div>
+
+      <div className="container">
+      <HeroBanner />
+        </div>
+
+      <div className="container">
+      <TrendingEvents />
+        </div>
+
+
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
