@@ -162,9 +162,6 @@ const Header = () => {
                 Sign In / Register
               </Link>
 
-                <div>
-                  <ThemeToggler />
-                </div>
               </div>
             </div>
           </div>
